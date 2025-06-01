@@ -6,7 +6,7 @@ export const MobileSideBarList = styled.ul`
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: ${({bgColor}) => (bgColor ? '#181818' : '#ffffff')};
+  background-color: ${props => (props.bgColor ? '#181818' : '#f1f1f1')};
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
@@ -25,7 +25,7 @@ export const MobileOption = styled.li`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: ${({isActive}) => (isActive ? '#ff0000' : '#606060')};
+  color: ${props => (props.isActive ? '#ff0000' : '#606060')};
 `
 
 export const MobileLink = styled(Link)`
@@ -35,5 +35,5 @@ export const MobileLink = styled(Link)`
 
 export const MobileOptionIconContainer = styled.div`
   font-size: 24px;
-  color: ${({isActive}) => (isActive ? '#ff0000' : '#606060')};
+  color: ${props => (props.isActive ? '#ff0000' : '#606060')};
 `

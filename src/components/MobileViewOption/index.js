@@ -19,8 +19,8 @@ const MobileViewOption = () => {
         const {colorStatus} = value
         const optionStatus = location.pathname
         return (
-          <MobileSideBarList>
-            <MobileOption bgColor={colorStatus} isActive={optionStatus === '/'}>
+          <MobileSideBarList bgColor={colorStatus}>
+            <MobileOption isActive={optionStatus === '/'}>
               <MobileLink to="/">
                 <MobileOptionIconContainer isActive={optionStatus === '/'}>
                   <AiFillHome />
@@ -39,10 +39,7 @@ const MobileViewOption = () => {
                 </MobileOptionIconContainer>
               </MobileLink>
             </MobileOption>
-            <MobileOption
-              bgColor={colorStatus}
-              isActive={optionStatus === '/gaming'}
-            >
+            <MobileOption isActive={optionStatus === '/gaming'}>
               <MobileLink to="/gaming">
                 <MobileOptionIconContainer
                   isActive={optionStatus === '/gaming'}
@@ -51,10 +48,7 @@ const MobileViewOption = () => {
                 </MobileOptionIconContainer>
               </MobileLink>
             </MobileOption>
-            <MobileOption
-              bgColor={colorStatus}
-              isActive={optionStatus === '/saved-videos'}
-            >
+            <MobileOption isActive={optionStatus === '/saved-videos'}>
               <MobileLink to="/saved-videos">
                 <MobileOptionIconContainer
                   isActive={optionStatus === '/saved-videos'}
